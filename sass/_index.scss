@@ -1,7 +1,14 @@
 @use './variables';
 
+
+@mixin tamanio ($margen, $ancho){
+    margin:$margen;
+    width:$ancho;
+}
+
 .contenedor_img{
     background-color:white;
-    margin:2%;
-    width: 46%; 
+    @include tamanio (2%, 46%);
+   /*  margin:2%;
+    width: 46%;  */
 }
