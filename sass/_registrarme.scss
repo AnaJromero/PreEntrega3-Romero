@@ -1,0 +1,8 @@
+@use './variables';
+
+
+label{
+    color: variables.$label;
+}
+
+
