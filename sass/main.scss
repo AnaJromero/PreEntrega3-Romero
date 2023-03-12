@@ -37,10 +37,6 @@ ul{
     margin: 0%;
 }
 
-p{
-    font-size: small;
-}
-
 nav{
     height: variables.$height_nav;
 }
@@ -77,12 +73,22 @@ section{
     }
 }
 
+/* .contenedor_img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgb(0 0 0 / 50%);
+}
+
+.contenedor_img:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
+} */
+
 footer{
     background-color: variables.$footer_background;
     height:variables.$footer_height;
     margin-top: variables.$footer_mtop;
     ul{
-        display:flex;
+        display:variables.$section_ul_display;
         list-style: none;
         li{
             width: variables.$footer_li_width;
@@ -144,11 +150,11 @@ footer{
     }
 
     footer{
-        ul{ display:flex;
+        ul{ display:variables.$section_ul_display;
             list-style: none; 
             li{ 
                 @include tamanio (0%, 5%);
-                margin-left: 3%;
+                margin-left:variables.$footer_li_mleft;
             } 
         } 
     }
@@ -166,12 +172,12 @@ footer{
 @media screen and (min-width:1440px){
 
     footer{
-        margin-top: 5%;
-        ul{ display:flex;
+        margin-top:variables.$footer_mtop;
+        ul{ display:variables.$section_ul_display;
             list-style: none; 
             li{
                 @include tamanio (0%, 4%);
-                margin-left: 3%;
+                margin-left:variables.$footer_li_mleft;
             } 
         } 
     }
@@ -179,8 +185,8 @@ footer{
     section{
         ul{
             list-style: none;
-            display:flex;
-            text-align:center;
+            display:variables.$section_ul_display;
+            text-align:variables.$section_ul_aling;
             font-size:variables.$section_fontx;       
         }
     }

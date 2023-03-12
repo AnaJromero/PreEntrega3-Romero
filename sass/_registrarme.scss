@@ -1,5 +1,9 @@
 @use './variables';
 
+@mixin tamanio ($margen, $ancho){
+    margin:$margen;
+    width:$ancho;
+}
 
 label{
     color: variables.$label;
@@ -16,12 +20,12 @@ label{
 
 @media screen and (min-width: 768px) {
     .container{
-        width: 60%;   
+        @include tamanio (0%, 60%);    
     }
 }
 
 @media screen and (min-width: 1440px) {
     .container{
-        width: 45%;   
+        @include tamanio (0%, 45%);  
     }
 }

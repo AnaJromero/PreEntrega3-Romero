@@ -1,7 +1,7 @@
 .contenedor_salsas {
   background-color: white;
-  width: 46%;
   margin: 2%;
+  width: 46%;
 }
 
 label {
@@ -15,11 +15,13 @@ label {
 
 @media screen and (min-width: 768px) {
   .container {
+    margin: 0%;
     width: 60%;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
+    margin: 0%;
     width: 45%;
   }
 }
@@ -31,7 +33,7 @@ label {
   background-color: white;
   margin-bottom: 5%;
   margin: 3%;
-  width: 130px;
+  width: 46%;
 }
 
 .delivery {
@@ -42,14 +44,6 @@ label {
   width: 46%;
   background-color: white;
   margin: 2%;
-}
-
-.contenedor_img {
-  background-color: white;
-  margin: 2%;
-  width: 46%;
-  /*  margin:2%;
-   width: 46%;  */
 }
 
 /* ETIQUETAS */
@@ -76,10 +70,6 @@ li {
 ul {
   padding: 0%;
   margin: 0%;
-}
-
-p {
-  font-size: small;
 }
 
 nav {
@@ -115,6 +105,15 @@ section ul {
   font-size: smaller;
 }
 
+/* .contenedor_img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgb(0 0 0 / 50%);
+}
+
+.contenedor_img:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
+} */
 footer {
   background-color: yellow;
   height: 12%;
@@ -125,7 +124,7 @@ footer ul {
   list-style: none;
 }
 footer ul li {
-  width: 10%;
+  width: 5%;
   margin-left: 5%;
 }
 
@@ -175,7 +174,7 @@ footer ul li {
   footer ul li {
     margin: 0%;
     width: 5%;
-    margin-left: 3%;
+    margin-left: 5%;
   }
 }
 /* 1024px */
@@ -188,7 +187,7 @@ footer ul li {
 /* 1440px */
 @media screen and (min-width: 1440px) {
   footer {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   footer ul {
     display: flex;
@@ -197,7 +196,7 @@ footer ul li {
   footer ul li {
     margin: 0%;
     width: 4%;
-    margin-left: 3%;
+    margin-left: 5%;
   }
   section ul {
     list-style: none;
