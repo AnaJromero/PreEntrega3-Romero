@@ -1,8 +1,34 @@
 @use './variables';
 
+@mixin tamanio ($margen, $ancho){
+    margin:$margen;
+    width:$ancho;
+}
 
 label{
     color: variables.$label;
 }
 
+.boton{
+    width: 30%;
+    margin-top: 3%;
+}
 
+.regi{
+    @extend .boton
+};
+
+@media screen and (min-width: 768px) {
+    .container{
+        @include tamanio (0,60%); 
+        margin-left: 18%;   
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        @include tamanio (0%, 50%);  
+        margin-left: 25%;
+    }
+}

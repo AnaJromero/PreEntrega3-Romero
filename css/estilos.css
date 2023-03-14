@@ -1,47 +1,162 @@
 .contenedor_salsas {
   background-color: white;
-  width: 46%;
   margin: 2%;
+  width: 46%;
 }
 
+@media screen and (min-width: 768px) {
+  .contenedor_salsas {
+    margin: 1%;
+    width: 23%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_salsas {
+    margin: 2%;
+    width: 20%;
+  }
+}
 label {
   color: white;
 }
 
+.boton, .regi {
+  width: 30%;
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0;
+    width: 60%;
+    margin-left: 18%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 0%;
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 label {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0;
+    width: 60%;
+    margin-left: 18%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 0%;
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 3%;
-  width: 130px;
+  margin: 2%;
+  width: 44%;
+  transition: 0.5s;
 }
 
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 3%;
-  width: 130px;
+  margin: 2%;
+  width: 44%;
+  transition: 0.5s;
 }
 
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
 .delivery {
   color: white;
 }
 
 .contenedor_bebidas {
+  margin: 2%;
   width: 46%;
   background-color: white;
-  margin: 2%;
 }
 
+@media screen and (min-width: 375px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 46%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 21%;
+  }
+}
 .contenedor_img {
   background-color: white;
+  margin-bottom: 5%;
   margin: 2%;
-  width: 46%;
+  width: 44%;
+  transition: 0.5s;
 }
 
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
 /* ETIQUETAS */
 * {
   margin: 0;
@@ -49,25 +164,10 @@ label {
   width: 100%;
 }
 
-/* 
-nav{
-    height: 5%;
-} */
 div .row {
   margin: 0;
 }
 
-/* 
-section{
-    ul{
-        list-style: none;
-        display:flex;
-        height: 6%;
-        text-align:center;
-        background-color:yellow;
-        font-size:smaller;       
-    }
-} */
 a {
   text-decoration: none;
   font-weight: bold;
@@ -83,20 +183,6 @@ ul {
   margin: 0%;
 }
 
-/* h2{
-    padding: 6%;
-    color: white;
-} */
-/* h6{
-    padding: 6%;
-} */
-p {
-  font-size: small;
-}
-
-/* label{
-    color:white
-} */
 nav {
   height: 5%;
 }
@@ -110,6 +196,16 @@ h6 {
   padding: 6%;
 }
 
+/* CLASES */
+.btn {
+  color: black;
+  background-color: white;
+}
+
+body {
+  background-color: black;
+}
+
 section ul {
   list-style: none;
   display: flex;
@@ -121,7 +217,7 @@ section ul {
 
 footer {
   background-color: yellow;
-  height: 10%;
+  height: 12%;
   margin-top: 10%;
 }
 footer ul {
@@ -129,53 +225,19 @@ footer ul {
   list-style: none;
 }
 footer ul li {
-  width: 10%;
+  width: 6%;
   margin-left: 5%;
-}
-
-/* footer{
-    background-color: yellow;
-    height: 10%;
-    margin-top: 10%;
-    ul{ display:flex;
-        list-style: none; 
-        li{ width: 10%;
-            margin-left: 5%;
-        } 
-    } 
-} */
-/* CLASES */
-.btn {
-  color: black;
-  background-color: white;
-}
-
-body {
-  background-color: black;
 }
 
 /* first mobile */
 /* 375px */
 @media screen and (min-width: 375px) {
-  .contenedor_bebidas {
-    width: 46%;
-  }
   section ul {
     font-size: large;
   }
 }
 /* 768px */
 @media screen and (min-width: 768px) {
-  .contenedor_img {
-    width: 31%;
-    margin: 1%;
-  }
-  .contenedor_bebidas {
-    width: 21%;
-  }
-  .contenedor_salsas {
-    width: 21%;
-  }
   section ul {
     font-size: x-large;
   }
@@ -184,74 +246,30 @@ body {
     list-style: none;
   }
   footer ul li {
+    margin: 0%;
     width: 5%;
-    margin-left: 3%;
+    margin-left: 2%;
   }
 }
 /* 1440px */
 @media screen and (min-width: 1440px) {
   footer {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   footer ul {
     display: flex;
     list-style: none;
   }
   footer ul li {
+    margin: 0%;
     width: 4%;
-    margin-left: 3%;
+    margin-left: 2%;
   }
   section ul {
     list-style: none;
     display: flex;
     text-align: center;
-    font-size: xx-large;
-  }
-}
-/* ----------------------------------------------
- * Generated by Animista on 2023-3-9 21:25:49
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-@-webkit-keyframes flip-scale-2-ver-right {
-  0% {
-    -webkit-transform: translateX(0) rotateY(0) scale(1);
-    transform: translateX(0) rotateY(0) scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  50% {
-    -webkit-transform: translateX(50%) rotateY(-90deg) scale(2);
-    transform: translateX(50%) rotateY(-90deg) scale(2);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-  }
-  100% {
-    -webkit-transform: translateX(100%) rotateY(-180deg) scale(1);
-    transform: translateX(100%) rotateY(-180deg) scale(1);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-  }
-}
-@keyframes flip-scale-2-ver-right {
-  0% {
-    -webkit-transform: translateX(0) rotateY(0) scale(1);
-    transform: translateX(0) rotateY(0) scale(1);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  50% {
-    -webkit-transform: translateX(50%) rotateY(-90deg) scale(2);
-    transform: translateX(50%) rotateY(-90deg) scale(2);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-  }
-  100% {
-    -webkit-transform: translateX(100%) rotateY(-180deg) scale(1);
-    transform: translateX(100%) rotateY(-180deg) scale(1);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    font-size: x-large;
   }
 }
 
