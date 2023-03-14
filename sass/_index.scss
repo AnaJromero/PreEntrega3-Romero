@@ -1,3 +1,29 @@
 @use './variables';
 
+@mixin tamanio ($margen, $ancho){
+    margin:$margen;
+    width:$ancho;
+}
 
+.contenedor_img{
+    background-color:white;
+    margin-bottom: 5%;
+    @include tamanio (2%,44%);
+    transition: 0.5s;
+}
+
+.contenedor_img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:768px){
+    .contenedor_img{
+        @include tamanio (2%, 29%);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contenedor_img{
+        @include tamanio (4%, 25%);
+    }
+}

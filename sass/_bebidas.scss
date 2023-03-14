@@ -1,9 +1,28 @@
 @use './variables';
-
-
-.contenedor_bebidas{
-   width: 46%;
-   background-color:white;
-   margin:2%;
+@mixin tamanio ($margen, $ancho){
+   margin:$margen;
+   width:$ancho;
 }
 
+.contenedor_bebidas{
+   @include tamanio(2%,46%);
+   background-color:white;
+}
+
+@media screen and (min-width:375px){
+   .contenedor_bebidas{
+      @include tamanio (2%, 46%);
+   }
+}
+
+@media screen and (min-width:768px){
+   .contenedor_bebidas{
+      @include tamanio (2%, 29%);
+   }
+}
+
+@media screen and (min-width:1024px){
+   .contenedor_bebidas{
+      @include tamanio (2%, 21%);
+   }
+}

@@ -4,6 +4,18 @@
   width: 46%;
 }
 
+@media screen and (min-width: 768px) {
+  .contenedor_salsas {
+    margin: 1%;
+    width: 23%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_salsas {
+    margin: 2%;
+    width: 20%;
+  }
+}
 label {
   color: white;
 }
@@ -15,37 +27,136 @@ label {
 
 @media screen and (min-width: 768px) {
   .container {
-    margin: 0%;
+    margin: 0;
     width: 60%;
+    margin-left: 18%;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
     margin: 0%;
-    width: 45%;
+    width: 50%;
+    margin-left: 25%;
   }
 }
 label {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0;
+    width: 60%;
+    margin-left: 18%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 0%;
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 3%;
-  width: 46%;
+  margin: 2%;
+  width: 44%;
+  transition: 0.5s;
 }
 
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
+.contenedor_img {
+  background-color: white;
+  margin-bottom: 5%;
+  margin: 2%;
+  width: 44%;
+  transition: 0.5s;
+}
+
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
 .delivery {
   color: white;
 }
 
 .contenedor_bebidas {
+  margin: 2%;
   width: 46%;
   background-color: white;
-  margin: 2%;
 }
 
+@media screen and (min-width: 375px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 46%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_bebidas {
+    margin: 2%;
+    width: 21%;
+  }
+}
+.contenedor_img {
+  background-color: white;
+  margin-bottom: 5%;
+  margin: 2%;
+  width: 44%;
+  transition: 0.5s;
+}
+
+.contenedor_img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor_img {
+    margin: 2%;
+    width: 29%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor_img {
+    margin: 4%;
+    width: 25%;
+  }
+}
 /* ETIQUETAS */
 * {
   margin: 0;
@@ -95,7 +206,6 @@ body {
   background-color: black;
 }
 
-/* Variables */
 section ul {
   list-style: none;
   display: flex;
@@ -105,15 +215,6 @@ section ul {
   font-size: smaller;
 }
 
-/* .contenedor_img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgb(0 0 0 / 50%);
-}
-
-.contenedor_img:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
-} */
 footer {
   background-color: yellow;
   height: 12%;
@@ -124,46 +225,19 @@ footer ul {
   list-style: none;
 }
 footer ul li {
-  width: 5%;
+  width: 6%;
   margin-left: 5%;
 }
 
-/* Mixins & animacion*/
-.contenedor_img {
-  background-color: white;
-  margin: 2%;
-  width: 46%;
-  /*  transition: all 1s; */
-}
-
-/* .contenedor_img:hover{
-    transform: scale(1.2);
-} */
 /* first mobile */
 /* 375px */
 @media screen and (min-width: 375px) {
-  .contenedor_bebidas {
-    margin: 0%;
-    width: 46%;
-  }
   section ul {
     font-size: large;
   }
 }
 /* 768px */
 @media screen and (min-width: 768px) {
-  .contenedor_img {
-    margin: 1%;
-    width: 31%;
-  }
-  .contenedor_bebidas {
-    margin: 0%;
-    width: 21%;
-  }
-  .contenedor_salsas {
-    margin: 0%;
-    width: 21%;
-  }
   section ul {
     font-size: x-large;
   }
@@ -174,14 +248,7 @@ footer ul li {
   footer ul li {
     margin: 0%;
     width: 5%;
-    margin-left: 5%;
-  }
-}
-/* 1024px */
-@media screen and (min-width: 1024px) {
-  .contenedor_img {
-    margin: 4%;
-    width: 25%;
+    margin-left: 2%;
   }
 }
 /* 1440px */
@@ -196,7 +263,7 @@ footer ul li {
   footer ul li {
     margin: 0%;
     width: 4%;
-    margin-left: 5%;
+    margin-left: 2%;
   }
   section ul {
     list-style: none;

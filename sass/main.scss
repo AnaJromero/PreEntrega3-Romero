@@ -7,7 +7,10 @@
 @use './bebidas.scss';
 @use './index';
 @use './variables';
-
+@mixin tamanio ($margen, $ancho){
+    margin:$margen;
+    width:$ancho;
+}
                                             /* ETIQUETAS */
 
 *{
@@ -60,8 +63,6 @@ body{
     background-color:variables.$body_background;
 }
 
-                                            /* Variables */
-
 section{
     ul{
         list-style: none;
@@ -72,16 +73,6 @@ section{
         font-size:variables.$section_font;       
     }
 }
-
-/* .contenedor_img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgb(0 0 0 / 50%);
-}
-
-.contenedor_img:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 50px rgb(0 0 0 / 20%);
-} */
 
 footer{
     background-color: variables.$footer_background;
@@ -96,31 +87,11 @@ footer{
         }
     }
 }
-                                                /* Mixins & animacion*/
-@mixin tamanio ($margen, $ancho){
-    margin:$margen;
-    width:$ancho;
-}
-
-.contenedor_img{
-    background-color:white;
-    @include tamanio (2%, 46%);
-   /*  transition: all 1s; */
-}
-
-/* .contenedor_img:hover{
-    transform: scale(1.2);
-} */
-
 
                                         /* first mobile */
                                             /* 375px */
                 
 @media screen and (min-width:375px){
-    .contenedor_bebidas{
-        @include tamanio (0%, 46%);
-    }
-
     section{
         ul{
             font-size:variables.$section_fontL;       
@@ -131,17 +102,6 @@ footer{
                                             /* 768px */
 
 @media screen and (min-width:768px){
-    .contenedor_img{
-        @include tamanio (1%, 31%);
-    }
-
-    .contenedor_bebidas{
-        @include tamanio (0%, 21%);
-    }
-
-    .contenedor_salsas{
-        @include tamanio (0%, 21%);
-    }
 
     section{
         ul{
@@ -154,18 +114,12 @@ footer{
             list-style: none; 
             li{ 
                 @include tamanio (0%, 5%);
-                margin-left:variables.$footer_li_mleft;
+                margin-left:variables.$footer_li_mleft - 3;
             } 
         } 
     }
 }
 
-                                            /* 1024px */
-@media screen and (min-width:1024px){
-    .contenedor_img{
-        @include tamanio (4%, 25%);
-    }
-}
                                         
                                             /* 1440px */
 
@@ -177,7 +131,7 @@ footer{
             list-style: none; 
             li{
                 @include tamanio (0%, 4%);
-                margin-left:variables.$footer_li_mleft;
+                margin-left:variables.$footer_li_mleft - 3;
             } 
         } 
     }

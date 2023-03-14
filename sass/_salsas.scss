@@ -9,3 +9,14 @@
     @include tamanio (2%, 46%);
 }
 
+@media screen and (min-width:768px){
+    .contenedor_salsas{
+        @include tamanio (1%, 23%);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contenedor_salsas{
+        @include tamanio (2%, 20%);
+    }
+}

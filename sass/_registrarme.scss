@@ -20,12 +20,15 @@ label{
 
 @media screen and (min-width: 768px) {
     .container{
-        @include tamanio (0%, 60%);    
+        @include tamanio (0,60%); 
+        margin-left: 18%;   
+        
     }
 }
 
 @media screen and (min-width: 1440px) {
     .container{
-        @include tamanio (0%, 45%);  
+        @include tamanio (0%, 50%);  
+        margin-left: 25%;
     }
 }
