@@ -3,20 +3,38 @@
 @mixin tamanio ($margen, $ancho){
     margin:$margen;
     width:$ancho;
+
 }
+.salsa{
+    @include tamanio (3%,50%);
+}
+
+.btn{
+    margin-bottom: 2%;
+}
+
+.h6_salsa{
+    margin-top: 18%;
+    font-weight:bolder;
+}
+
+.h6-salsa{
+    margin-top: 10%;
+    font-weight:bolder;
+}
+
 .contenedor_salsas{
     background-color:white; 
-    @include tamanio (2%, 46%);
+    @include tamanio (8%,83%);
+    transition: 0.5s;
 }
 
+.contenedor_salsas:hover{
+    transform: scale(1.2);
+}
+ 
 @media screen and (min-width:768px){
     .contenedor_salsas{
-        @include tamanio (1%, 23%);
-    }
-}
-
-@media screen and (min-width:1024px){
-    .contenedor_salsas{
-        @include tamanio (2%, 20%);
+        @include tamanio (3%, 27%);
     }
 }

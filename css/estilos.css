@@ -1,19 +1,37 @@
+.salsa {
+  margin: 3%;
+  width: 50%;
+}
+
+.btn {
+  margin-bottom: 2%;
+}
+
+.h6_salsa {
+  margin-top: 18%;
+  font-weight: bolder;
+}
+
+.h6-salsa {
+  margin-top: 10%;
+  font-weight: bolder;
+}
+
 .contenedor_salsas {
   background-color: white;
-  margin: 2%;
-  width: 46%;
+  margin: 8%;
+  width: 83%;
+  transition: 0.5s;
+}
+
+.contenedor_salsas:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
   .contenedor_salsas {
-    margin: 1%;
-    width: 23%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contenedor_salsas {
-    margin: 2%;
-    width: 20%;
+    margin: 3%;
+    width: 27%;
   }
 }
 label {
@@ -57,11 +75,19 @@ label {
     margin-left: 25%;
   }
 }
+p {
+  font-size: small;
+}
+
+.btn {
+  margin-bottom: 5%;
+}
+
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 2%;
-  width: 44%;
+  margin: 10%;
+  width: 80%;
   transition: 0.5s;
 }
 
@@ -71,21 +97,23 @@ label {
 
 @media screen and (min-width: 768px) {
   .contenedor_img {
-    margin: 2%;
-    width: 29%;
+    margin: 3%;
+    width: 27%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .contenedor_img {
-    margin: 4%;
-    width: 25%;
-  }
+p {
+  font-size: small;
 }
+
+.btn {
+  margin-bottom: 5%;
+}
+
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 2%;
-  width: 44%;
+  margin: 10%;
+  width: 80%;
   transition: 0.5s;
 }
 
@@ -95,49 +123,59 @@ label {
 
 @media screen and (min-width: 768px) {
   .contenedor_img {
-    margin: 2%;
-    width: 29%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contenedor_img {
-    margin: 4%;
-    width: 25%;
+    margin: 3%;
+    width: 27%;
   }
 }
 .delivery {
   color: white;
 }
 
-.contenedor_bebidas {
-  margin: 2%;
-  width: 46%;
-  background-color: white;
+.lata {
+  width: 50%;
+  margin: 3%;
 }
 
-@media screen and (min-width: 375px) {
-  .contenedor_bebidas {
-    margin: 2%;
-    width: 46%;
-  }
+.btn {
+  margin-bottom: 2%;
 }
+
+.h6_lata {
+  margin-top: 18%;
+  font-weight: bolder;
+}
+
+.contenedor_bebidas {
+  margin: 8%;
+  width: 83%;
+  background-color: white;
+  transition: 0.5s;
+  margin-bottom: 4%;
+}
+
+.contenedor_bebidas:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 768px) {
   .contenedor_bebidas {
-    margin: 2%;
-    width: 29%;
+    margin: 3%;
+    width: 27%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .contenedor_bebidas {
-    margin: 2%;
-    width: 21%;
-  }
+p {
+  font-size: small;
 }
+
+.btn {
+  margin-bottom: 5%;
+}
+
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
-  margin: 2%;
-  width: 44%;
+  margin: 10%;
+  width: 80%;
   transition: 0.5s;
 }
 
@@ -147,14 +185,8 @@ label {
 
 @media screen and (min-width: 768px) {
   .contenedor_img {
-    margin: 2%;
-    width: 29%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contenedor_img {
-    margin: 4%;
-    width: 25%;
+    margin: 3%;
+    width: 27%;
   }
 }
 /* ETIQUETAS */

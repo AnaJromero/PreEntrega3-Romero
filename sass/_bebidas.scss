@@ -4,25 +4,34 @@
    width:$ancho;
 }
 
-.contenedor_bebidas{
-   @include tamanio(2%,46%);
-   background-color:white;
+.lata{
+   width: 50%;
+   margin: 3%;
 }
 
-@media screen and (min-width:375px){
-   .contenedor_bebidas{
-      @include tamanio (2%, 46%);
-   }
+.btn{
+   margin-bottom: 2%;
+}
+
+.h6_lata{
+   margin-top: 18%;
+   font-weight:bolder;
+}
+
+.contenedor_bebidas{
+   @include tamanio (8%,83%);
+   background-color:white;
+   transition: 0.5s;
+   margin-bottom: 4%;
+}
+
+.contenedor_bebidas:hover{
+   transform: scale(1.2);
 }
 
 @media screen and (min-width:768px){
    .contenedor_bebidas{
-      @include tamanio (2%, 29%);
+      @include tamanio (3%, 27%);
    }
 }
 
-@media screen and (min-width:1024px){
-   .contenedor_bebidas{
-      @include tamanio (2%, 21%);
-   }
-}
