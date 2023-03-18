@@ -5,11 +5,23 @@
     width:$ancho;
 }
 
+p{
+    font-size:small;
+}
+
 .contenedor_img{
     background-color:white;
     margin-bottom: 5%;
-    @include tamanio (2%,44%);
+    @include tamanio (10%,80%);
     transition: 0.5s;
+/*     position: relative;
+    div{
+        select{
+            .btn{
+                position:absolute;
+            }  
+        }
+    } */
 }
 
 .contenedor_img:hover{
@@ -17,13 +29,12 @@
 }
 
 @media screen and (min-width:768px){
+    
     .contenedor_img{
-        @include tamanio (2%, 29%);
+        @include tamanio (3%, 27%);
+        .h3_img{
+            font-size: large;
+        }
     }
 }
 
-@media screen and (min-width:1024px){
-    .contenedor_img{
-        @include tamanio (4%, 25%);
-    }
-}
