@@ -27,6 +27,9 @@ p{
 @media screen and (min-width:768px){
     .contenedor_img{
         @include tamanio (3%, 27%);
+        .h3_img{
+            font-size: large;
+        }
     }
 }
 

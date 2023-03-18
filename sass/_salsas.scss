@@ -6,21 +6,16 @@
 
 }
 .salsa{
-    @include tamanio (3%,50%);
+    @include tamanio (3%,40%);
 }
 
 .btn{
     margin-bottom: 2%;
 }
 
-.h6_salsa{
-    margin-top: 18%;
-    font-weight:bolder;
-}
-
-.h6-salsa{
-    margin-top: 10%;
-    font-weight:bolder;
+.h3_salsa{
+    margin-top: 15%;
+    font-weight:500;
 }
 
 .contenedor_salsas{
@@ -36,5 +31,17 @@
 @media screen and (min-width:768px){
     .contenedor_salsas{
         @include tamanio (3%, 27%);
+        .h3_salsa{
+            font-size: large;
+        }
+        .h3-salsa{
+            font-size: large;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .h3-salsa{
+        margin-top: 13%;
     }
 }

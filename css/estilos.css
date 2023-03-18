@@ -1,20 +1,15 @@
 .salsa {
   margin: 3%;
-  width: 50%;
+  width: 40%;
 }
 
 .btn {
   margin-bottom: 2%;
 }
 
-.h6_salsa {
-  margin-top: 18%;
-  font-weight: bolder;
-}
-
-.h6-salsa {
-  margin-top: 10%;
-  font-weight: bolder;
+.h3_salsa {
+  margin-top: 15%;
+  font-weight: 500;
 }
 
 .contenedor_salsas {
@@ -32,6 +27,17 @@
   .contenedor_salsas {
     margin: 3%;
     width: 27%;
+  }
+  .contenedor_salsas .h3_salsa {
+    font-size: large;
+  }
+  .contenedor_salsas .h3-salsa {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .h3-salsa {
+    margin-top: 13%;
   }
 }
 label {
@@ -79,10 +85,9 @@ p {
   font-size: small;
 }
 
-.btn {
-  margin-bottom: 5%;
-}
-
+/* .btn{
+    margin-bottom: 6%;
+} */
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
@@ -99,6 +104,9 @@ p {
   .contenedor_img {
     margin: 3%;
     width: 27%;
+  }
+  .contenedor_img .h3_img {
+    font-size: large;
   }
 }
 p {
@@ -126,6 +134,9 @@ p {
     margin: 3%;
     width: 27%;
   }
+  .contenedor_img .h3_img {
+    font-size: large;
+  }
 }
 .delivery {
   color: white;
@@ -140,9 +151,9 @@ p {
   margin-bottom: 2%;
 }
 
-.h6_lata {
-  margin-top: 18%;
-  font-weight: bolder;
+.h3_lata {
+  margin-top: 15%;
+  font-weight: 500;
 }
 
 .contenedor_bebidas {
@@ -162,13 +173,12 @@ p {
     margin: 3%;
     width: 27%;
   }
+  .contenedor_bebidas .h3_lata {
+    font-size: large;
+  }
 }
 p {
   font-size: small;
-}
-
-.btn {
-  margin-bottom: 5%;
 }
 
 .contenedor_img {
@@ -177,6 +187,14 @@ p {
   margin: 10%;
   width: 80%;
   transition: 0.5s;
+  /*     position: relative;
+      div{
+          select{
+              .btn{
+                  position:absolute;
+              }  
+          }
+      } */
 }
 
 .contenedor_img:hover {
@@ -187,6 +205,9 @@ p {
   .contenedor_img {
     margin: 3%;
     width: 27%;
+  }
+  .contenedor_img .h3_img {
+    font-size: large;
   }
 }
 /* ETIQUETAS */
@@ -224,7 +245,7 @@ h2 {
   padding: 6%;
 }
 
-h6 {
+h3 {
   padding: 6%;
 }
 

@@ -10,9 +10,9 @@ p{
     font-size:small;
 }
 
-.btn{
-    margin-bottom: 5%;
-}
+/* .btn{
+    margin-bottom: 6%;
+} */
 
 .contenedor_img{
     background-color:white;
@@ -28,5 +28,8 @@ p{
 @media screen and (min-width:768px){
     .contenedor_img{
         @include tamanio (3%, 27%);
+        .h3_img{
+            font-size: large;
+        }
     }
 }

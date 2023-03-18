@@ -13,9 +13,9 @@
    margin-bottom: 2%;
 }
 
-.h6_lata{
-   margin-top: 18%;
-   font-weight:bolder;
+.h3_lata{
+   margin-top: 15%;
+   font-weight:500;
 }
 
 .contenedor_bebidas{
@@ -32,6 +32,10 @@
 @media screen and (min-width:768px){
    .contenedor_bebidas{
       @include tamanio (3%, 27%);
+      .h3_lata{
+         font-size:large;
+      }
    }
+   
 }
 
