@@ -1,5 +1,13 @@
 @use './variables';
 
+@mixin sticky($posicion, $altura){
+    position:$posicion;
+    top:$altura;
+}
+
+.sticky{
+    @include sticky(sticky,0 )
+}
 
 .delivery{
     color:white;

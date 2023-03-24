@@ -4,6 +4,15 @@
    width:$ancho;
 }
 
+@mixin sticky($posicion, $altura){
+   position:$posicion;
+   top:$altura;
+}
+
+.sticky{
+   @include sticky(sticky,0 )
+}
+
 .lata{
    width: 50%;
    margin: 3%;

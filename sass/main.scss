@@ -52,12 +52,6 @@ h2{
 h3{
     padding: variables.$padding_h2;
 }
-                                            /* CLASES */
-
-.btn{
-    color:black;
-    background-color: white;
-}
 
 body{
     background-color:variables.$body_background;
@@ -88,6 +82,13 @@ footer{
     }
 }
 
+                                            /* CLASES */
+
+.btn{
+    color:black;
+    background-color: white;
+}
+
                                         /* first mobile */
                                             /* 375px */
                 
@@ -102,7 +103,6 @@ footer{
                                             /* 768px */
 
 @media screen and (min-width:768px){
-
     section{
         ul{
             font-size:variables.$section_fontx;

@@ -5,14 +5,19 @@
     width:$ancho;
 }
 
+@mixin sticky($posicion, $altura){
+    position:$posicion;
+    top:$altura;
+}
+
+.sticky{
+    @include sticky(sticky,0 )
+}
 
 p{
     font-size:small;
 }
 
-/* .btn{
-    margin-bottom: 6%;
-} */
 
 .contenedor_img{
     background-color:white;
