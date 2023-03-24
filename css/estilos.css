@@ -1,3 +1,8 @@
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .salsa {
   margin: 3%;
   width: 40%;
@@ -40,6 +45,11 @@
     margin-top: 13%;
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 label {
   color: white;
 }
@@ -63,6 +73,11 @@ label {
     margin-left: 25%;
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 label {
   color: white;
 }
@@ -81,13 +96,15 @@ label {
     margin-left: 25%;
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 p {
   font-size: small;
 }
 
-/* .btn{
-    margin-bottom: 6%;
-} */
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
@@ -109,6 +126,11 @@ p {
     font-size: large;
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 p {
   font-size: small;
 }
@@ -138,8 +160,18 @@ p {
     font-size: large;
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .delivery {
   color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .lata {
@@ -181,20 +213,17 @@ p {
   font-size: small;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .contenedor_img {
   background-color: white;
   margin-bottom: 5%;
   margin: 10%;
   width: 80%;
   transition: 0.5s;
-  /*     position: relative;
-      div{
-          select{
-              .btn{
-                  position:absolute;
-              }  
-          }
-      } */
 }
 
 .contenedor_img:hover {
@@ -249,12 +278,6 @@ h3 {
   padding: 6%;
 }
 
-/* CLASES */
-.btn {
-  color: black;
-  background-color: white;
-}
-
 body {
   background-color: black;
 }
@@ -280,6 +303,12 @@ footer ul {
 footer ul li {
   width: 6%;
   margin-left: 5%;
+}
+
+/* CLASES */
+.btn {
+  color: black;
+  background-color: white;
 }
 
 /* first mobile */

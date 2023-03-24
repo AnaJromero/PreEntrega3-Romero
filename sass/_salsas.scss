@@ -3,8 +3,17 @@
 @mixin tamanio ($margen, $ancho){
     margin:$margen;
     width:$ancho;
-
 }
+
+@mixin sticky($posicion, $altura){
+    position:$posicion;
+    top:$altura;
+}
+
+.sticky{
+    @include sticky(sticky,0 )
+}
+
 .salsa{
     @include tamanio (3%,40%);
 }

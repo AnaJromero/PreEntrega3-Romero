@@ -9,19 +9,19 @@ p{
     font-size:small;
 }
 
+@mixin sticky($posicion, $altura){
+    position:$posicion;
+    top:$altura;
+}
+.sticky{
+    @include sticky(sticky,0 )
+}
 .contenedor_img{
     background-color:white;
     margin-bottom: 5%;
     @include tamanio (10%,80%);
     transition: 0.5s;
-/*     position: relative;
-    div{
-        select{
-            .btn{
-                position:absolute;
-            }  
-        }
-    } */
+
 }
 
 .contenedor_img:hover{
